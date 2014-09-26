@@ -1,0 +1,12 @@
+3. Locally Weighted Linear Regression
+
+(a) Equation used in case of unweighted linear regression:
+theta = (X'X)\(X'Y)
+Value obtained by this equation: 0.175311,0.327675
+
+
+(b) Equation used in case of weighted:
+theta = (X'WX)\(X'WY)
+where W is the weight matrix
+
+(c) 0.8 which was given as part of the question seems to work best for Ʈ. When Ʈ was made too small the curve resulted in the case of overfitting with various kinks in the curve. While large values of Ʈ did not seem to encapsulate the basic reason behind weighted regression and was unaffected to a great extent even when large cluster of points appeared on one side of the decision boundary. A classic case of underfitting. The curve will tend to unweighted linear regression straight-line when tau->infinity.

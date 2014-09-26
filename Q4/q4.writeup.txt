@@ -1,0 +1,29 @@
+4. Gaussian Discriminant Analysis
+
+
+(a) mu1 = 98.3800 , 429.6600
+mu2 = 137.4600 , 366.6200
+sigma = 
+   1.0e+03 *
+    0.2875   -0.0267
+   -0.0267    1.1233
+
+(c) x'\sigma*(mu0-mu1) - 0.5*(mu0+mu1)\sigma*(mu0-mu1) + log(phi/(1-phi) = 0 is the equation used for LDA. It guves us a linear decision boundary.
+
+(d) sigma1 = 
+
+1.0e+03 *
+
+    0.2554   -0.1843
+   -0.1843    1.3711
+
+   sigma2 =
+
+ 319.5684  130.8348
+ 130.8348  875.3956
+
+ Mean in this case will be same as in part (a).
+
+ (e) 2*log(phi/(1-phi))-log(det(sigma0)/det(sigma1))-([x;y]-mu0)'/sigma0*([x;y]-mu0)+([x;y]-mu1)'/sigma1*([x;y]-mu1) = 0 is the equation used for QDA. This will give us a decision boundary corresponding to a quadratic function.
+
+ (f) Quadratic boundary seems to better encapsulate the nature of data given to us. Evan the misclassifications in quadratic case is less as compared to linear. Though this was not a good example to see the advantages of quadratic discriminant analysis as the data seemed more or less linearly separable. Quadratic case might lead us to slight overfitting. But no assumptions on the covariance matrices in case of QDA reduces one constraint on input data for us.

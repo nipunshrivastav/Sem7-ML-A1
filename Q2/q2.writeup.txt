@@ -1,0 +1,11 @@
+2. Logistic Regression
+
+Equations used 
+
+gradient = x' * (  1./(1 + exp(-x*theta)) - y) / m;
+hessian = (repmat(1- 1./(1 + exp(-x*theta)), 1, n) .* x)' * (repmat( 1./(1 + exp(-ext_x*theta)),1,n) .* x) / (number of examples);
+    
+theta = theta - inv(hessian)*gradient;
+
+The last equation is the trademark equation of Newton's method.
+Value of Theta(2nd term is the intercept term): 0.760372,1.171947.

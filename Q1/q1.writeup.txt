@@ -1,0 +1,17 @@
+Linear Regression
+
+For pre-processing, we normalised the data and then added a column of ones to account for intercept term. We chose the learning rate as per given in the assignment question. J_theta(x) was the same function as discussed in class. Stopping parameter was when the change in value of J_theta(x) between two consecutive iterations became less than a certain threshold. Gradient of J_theta w.r.t. theta is given by
+
+		grad(J_theta) = -x_data'*(y_data - x_data*theta)
+
+With increasing value of learning rate, program took less and less iterations to converge, however, 1.3 took more iterations than 0.9 because 1.3 was big enough leaning rate for our program to actually go to the other side of optima with each iteration. This was clear from the contour plot. Any learning rate greater than 2 caused the program to diverge.
+
+Learning rate     Iterations
+0.1               72
+0.5               14
+0.9               6
+1.3               9
+2.1               Diverges
+2.5               Diverges
+
+For learning rate = 0.1, value of Theta(2nd term is the intercept term): 4.614357,5.836172. Learning rate equal to 1 seems the best bet for this case as it only takes 4 iterations and doesn't even oscillate around the optimal.
